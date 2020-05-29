@@ -4,8 +4,8 @@ file {'/root/README':
   content => 'This is a readme',
   owner => 'root',
   }
- package { 'htop':
+ package { 'docker':
   ensure => installed,
-  name   => $htop,
+  name   => $docker,
   }
 }
