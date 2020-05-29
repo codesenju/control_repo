@@ -4,7 +4,8 @@ file {'/root/README':
   content => 'This is a readme',
   owner => 'root',
   }
-  file {'/root/README':
-    owner => 'root',
-    }
+ package { 'htop':
+  ensure => installed,
+  name   => $htop,
+  }
 }
