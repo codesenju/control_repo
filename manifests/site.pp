@@ -9,7 +9,9 @@ node default {
 #  name   => $docker,
 #  }
 }
-
+node 'minetest.puppet.vm' {
+  include role::minecraft_server
+}
 node 'master.puppet.vm' {
   include role::master_server
   file { '/root/README':
