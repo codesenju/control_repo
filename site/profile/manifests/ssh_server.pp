@@ -1,4 +1,4 @@
-class profile::ssh_serrver {
+class profile::ssh_server {
         package {'openssh-server':
                 ensure => present,
          }
